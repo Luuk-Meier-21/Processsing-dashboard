@@ -1,10 +1,10 @@
 
-### Processing dashboard
+# Processing dashboard
 Door Luuk Meier
 
 ![image](https://user-images.githubusercontent.com/79259813/146765518-7794fc52-0bd5-409a-aed6-33395daa68c2.png)
 
-# Project structuur
+## Project structuur
 
 
 Command buttons
