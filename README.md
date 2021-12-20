@@ -11,7 +11,7 @@ Command buttons
 - core: *Herbruikbare code geschikt voor meerdere Swift projecten*
   - external: *Code van externe bronnen*
   - utils
-    - views: *Views Herbruikbare views*
+    - views: *Herbruikbare views*
 - processing: *code specifiek afgestemd op dit project*
   - classes: *Alle classes en structs specifiek gemaakt voor dit project*
   - views: *Alle views specifiek gemaakt voor dit project*
