@@ -7,7 +7,11 @@
 
 import Foundation
 
+
+
 class Serialization {
+    /// The Serializer class contains all base static methods for saving, loading and decoding data.
+    
     static func loadData(
         from url: URL
     ) throws -> Data? {
@@ -37,6 +41,8 @@ class Serialization {
 }
 
 class JSONCodableSerialization<T: Codable> {
+    /// The JSONCodableSerialization uses the JSONDecoder, JSONEncoder and Serializer classes to save and load json data from a given url.
+    
     let decoder = JSONDecoder();
     let encoder = JSONEncoder();
     

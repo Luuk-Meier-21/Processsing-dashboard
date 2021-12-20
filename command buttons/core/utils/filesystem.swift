@@ -8,8 +8,9 @@
 import Foundation
 import SwiftUI
 
-
 extension NSOpenPanel {
+    /// Extention of `NSOpenPanel` with static presets for getting different types of urls from the filesystem.
+    
     static var selectSketchPanel: NSOpenPanel {
         let panel = NSOpenPanel();
         panel.title = "Pick a processing sketch folder";
@@ -36,15 +37,12 @@ extension NSOpenPanel {
 }
 
 class SketchFolder: Folder {
+    /// The Sketchfolder class has methods to get, assign and use a sketch folder url.
+
     private var url: URL?;
     
     enum SketchFolderError: Error {
         case sketchPathIsNil;
-    }
-    
-    // TODO: check is sketchPath is a valid sketch folder
-    private func isValidSketch() -> Bool {
-        return false;
     }
     
     public func select() {
@@ -71,6 +69,8 @@ class SketchFolder: Folder {
 }
 
 class Folder {
+    /// The Folder class and its static method `selectFolder()` give the option to open a panel and pass the result on the `onResult` closure.
+    
     static func selectFolder(from panel: NSOpenPanel, onResult: ( _ result: URL) -> Void) {
         if (panel.runModal() == NSApplication.ModalResponse.OK) {
             let result = panel.url

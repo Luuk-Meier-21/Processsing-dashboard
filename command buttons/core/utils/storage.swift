@@ -58,12 +58,6 @@ class Storage<T: Codable>: ObservableObject {
         self.isUnresolvable = false;
         self.serializer = JSONCodableSerialization<T>();
     }
-    
-//    func updateSavedState(_ old: T, _ new: T) {
-//        if old == new {
-//            self.hasSaved = false;
-//        }
-//    }
 }
 
 class JSONStorage<T: Codable>: Storage<T> {

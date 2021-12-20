@@ -28,7 +28,6 @@
 		27D78A27274D7A2F002F6E8E /* processingSource.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D78A26274D7A2F002F6E8E /* processingSource.view.swift */; };
 		27D78A29274ED15E002F6E8E /* string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D78A28274ED15E002F6E8E /* string.swift */; };
 		27D78A2B27503878002F6E8E /* quantumValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D78A2A27503878002F6E8E /* quantumValue.swift */; };
-		27EAE8CA27592AE200CB5C57 /* binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAE8C927592AE200CB5C57 /* binding.swift */; };
 		27EAE8CD275BCA7F00CB5C57 /* utilities.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EAE8CC275BCA7F00CB5C57 /* utilities.view.swift */; };
 		27F9731227492540003CC6D9 /* relativePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9731127492540003CC6D9 /* relativePath.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +56,6 @@
 		27D78A26274D7A2F002F6E8E /* processingSource.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processingSource.view.swift; sourceTree = "<group>"; };
 		27D78A28274ED15E002F6E8E /* string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = string.swift; sourceTree = "<group>"; };
 		27D78A2A27503878002F6E8E /* quantumValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quantumValue.swift; sourceTree = "<group>"; };
-		27EAE8C927592AE200CB5C57 /* binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = binding.swift; sourceTree = "<group>"; };
 		27EAE8CC275BCA7F00CB5C57 /* utilities.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.view.swift; sourceTree = "<group>"; };
 		27F9731127492540003CC6D9 /* relativePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = relativePath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,7 +148,6 @@
 				274C08862732B872003C83C7 /* bash.swift */,
 				2711418F2746D59800E2875B /* filesystem.swift */,
 				27D78A28274ED15E002F6E8E /* string.swift */,
-				27EAE8C927592AE200CB5C57 /* binding.swift */,
 				27D78A2A27503878002F6E8E /* quantumValue.swift */,
 			);
 			path = utils;
@@ -266,7 +263,6 @@
 				27F9731227492540003CC6D9 /* relativePath.swift in Sources */,
 				27464F42274CF71700FB489B /* processingSize.view.swift in Sources */,
 				274C08852732B855003C83C7 /* serialization.swift in Sources */,
-				27EAE8CA27592AE200CB5C57 /* binding.swift in Sources */,
 				274C08662732B66C003C83C7 /* ContentView.swift in Sources */,
 				275FEE93273ADF7800ABAC60 /* processing.view.swift in Sources */,
 				271141902746D59800E2875B /* filesystem.swift in Sources */,

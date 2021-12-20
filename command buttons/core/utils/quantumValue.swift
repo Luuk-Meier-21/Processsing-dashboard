@@ -3,16 +3,22 @@
 //  command buttons
 //
 //  Created by Luuk Meier on 25/11/2021.
-//
+//  Inspired by Luca Angeletti on Stackoverflow: https://stackoverflow.com/questions/48297263/how-to-use-any-in-codable-type
 
 import Foundation
 
 class QuantumValue: Codable {
+    /// Quantum values make it possible to store one value with multiple possible types.
+    /// Quantum values are defined by setting the `raw` property which is then “Observed” (unwrapped and assigned) by the `observeValue()` method.
+
+    /// This class is not perfect and could likely be improved by using type inference to get rid of the “Observed” properties.
+    
+    /// Observed properties:
     var string: String?;
     var int: Int?;
     var size: Size?;
     var stringSelection: Selection<String>?;
-    // Holds raw quantum value:
+    /// Holds raw quantum value:
     var raw: QuantumEnum;
     
     enum QuantumEnum: Codable {
@@ -40,6 +46,7 @@ class QuantumValue: Codable {
         try encodeOptionals(container)
     }
     
+    /// The `observeValue()` assigns the underlying value of raw to a property of that type as an optional.
     func observeValue() -> Void {
         switch self.raw {
             case .string(let string):
@@ -55,6 +62,7 @@ class QuantumValue: Codable {
         }
     }
     
+    /// The `assignValue()` assigns the first “observed” value that is not `nil` to the `raw` property as enum of that type.
     func assignValue() -> Void {
         switch self.raw {
             case .string(_):
@@ -79,6 +87,7 @@ class QuantumValue: Codable {
         }
     }
     
+    /// The encodeOptionals adds the first “observed” value that is not `nil` to the encoded version of this class. This makes accesses from the JSON file easier.
     func encodeOptionals(_ container: KeyedEncodingContainer<QuantumValue.CodingKeys>) throws -> Void {
         var container = container;
         

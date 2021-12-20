@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
+/// Utility classes
 
-// does not want 
 class Size: Codable {
     var w: CGFloat;
     var h: CGFloat;

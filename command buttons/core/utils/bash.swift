@@ -10,15 +10,10 @@ protocol CommandExecuting {
     static func run(commandName: String, arguments: [String]) throws -> String
 }
 
-typealias ProgramRef = String;
-extension ProgramRef {
-    static let vsCode: ProgramRef = "Visual Studio Code - Insiders";
-    static let processing: ProgramRef = "Processing";
-    static let fallback: ProgramRef = "TextEdit";
-}
-
 struct Bash: CommandExecuting {
-    
+    /// The Bash struct makes it possible to run commands to the terminal from Swift.
+    /// Use the `run(command: String, with: [String])` method with a command and subsequent arguments.
+
     enum BashError: Error {
         case commandNotFound(name: String)
     }
