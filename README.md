@@ -8,12 +8,11 @@ Door Luuk Meier
 
 
 Command buttons
-- core 
-  Herbruikbare code geschikt voor meerdere Swift projecten
-  - external 		Code van externe bronnen
-  - utils			Code 
-    - views		Views Herbruikbare views
-- processing		code specifiek afgestemd op dit project
-  - classes 		Alle classes en structs specifiek gemaakt voor dit project
-  - views		Alle views specifiek gemaakt voor dit project
+- core: *Herbruikbare code geschikt voor meerdere Swift projecten
+  - external: *Code van externe bronnen
+  - utils: *Code 
+    - views: *Views Herbruikbare views
+- processing: *code specifiek afgestemd op dit project
+  - classes: *Alle classes en structs specifiek gemaakt voor dit project
+  - views: *Alle views specifiek gemaakt voor dit project
 
