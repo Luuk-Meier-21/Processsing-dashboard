@@ -16,10 +16,10 @@
 		274C08662732B66C003C83C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C08652732B66C003C83C7 /* ContentView.swift */; };
 		274C08682732B66E003C83C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274C08672732B66E003C83C7 /* Assets.xcassets */; };
 		274C086B2732B66E003C83C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274C086A2732B66E003C83C7 /* Preview Assets.xcassets */; };
-		274C08732732B688003C83C7 /* storing-json in Resources */ = {isa = PBXBuildFile; fileRef = 274C08722732B688003C83C7 /* storing-json */; };
 		274C08852732B855003C83C7 /* serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C08842732B855003C83C7 /* serialization.swift */; };
 		274C08872732B872003C83C7 /* bash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C08862732B872003C83C7 /* bash.swift */; };
 		274C08892732B8B6003C83C7 /* storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C08882732B8B6003C83C7 /* storage.swift */; };
+		275851B82770A8B000D922FF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 275851B72770A8B000D922FF /* README.md */; };
 		275FEE93273ADF7800ABAC60 /* processing.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FEE92273ADF7800ABAC60 /* processing.view.swift */; };
 		275FEE95273AFBFC00ABAC60 /* processingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FEE94273AFBFC00ABAC60 /* processingStyle.swift */; };
 		275FEE98273B01D400ABAC60 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275FEE97273B01D400ABAC60 /* input.swift */; };
@@ -41,14 +41,14 @@
 		27464F41274CF71700FB489B /* processingSize.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processingSize.view.swift; sourceTree = "<group>"; };
 		274C08602732B66C003C83C7 /* Processing dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Processing dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		274C08632732B66C003C83C7 /* command_buttonsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = command_buttonsApp.swift; sourceTree = "<group>"; };
-		274C08652732B66C003C83C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		274C08652732B66C003C83C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "/Users/luukmeier/Documents/Repos/Processsing-dashboard/command buttons/core/utils/views/ContentView.swift"; sourceTree = "<absolute>"; };
 		274C08672732B66E003C83C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274C086A2732B66E003C83C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		274C086C2732B66E003C83C7 /* command_buttons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = command_buttons.entitlements; sourceTree = "<group>"; };
-		274C08722732B688003C83C7 /* storing-json */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "storing-json"; path = "../../../command-executor/storing-json"; sourceTree = "<group>"; };
 		274C08842732B855003C83C7 /* serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serialization.swift; sourceTree = "<group>"; };
 		274C08862732B872003C83C7 /* bash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bash.swift; sourceTree = "<group>"; };
 		274C08882732B8B6003C83C7 /* storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storage.swift; sourceTree = "<group>"; };
+		275851B72770A8B000D922FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		275FEE92273ADF7800ABAC60 /* processing.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processing.view.swift; sourceTree = "<group>"; };
 		275FEE94273AFBFC00ABAC60 /* processingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processingStyle.swift; sourceTree = "<group>"; };
 		275FEE97273B01D400ABAC60 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		274C08572732B66C003C83C7 = {
 			isa = PBXGroup;
 			children = (
+				275851B72770A8B000D922FF /* README.md */,
 				274C08622732B66C003C83C7 /* command buttons */,
 				274C08612732B66C003C83C7 /* Products */,
 			);
@@ -105,7 +106,6 @@
 		274C08692732B66E003C83C7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				274C08722732B688003C83C7 /* storing-json */,
 				274C086A2732B66E003C83C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -251,7 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274C08732732B688003C83C7 /* storing-json in Resources */,
 				274C086B2732B66E003C83C7 /* Preview Assets.xcassets in Resources */,
 				274C08682732B66E003C83C7 /* Assets.xcassets in Resources */,
 			);
@@ -273,6 +272,7 @@
 				271141902746D59800E2875B /* filesystem.swift in Sources */,
 				27464F40274CED1000FB489B /* dispatch.swift in Sources */,
 				275FEE95273AFBFC00ABAC60 /* processingStyle.swift in Sources */,
+				275851B82770A8B000D922FF /* README.md in Sources */,
 				27D78A22274D78C8002F6E8E /* utilities.swift in Sources */,
 				274C08892732B8B6003C83C7 /* storage.swift in Sources */,
 				274C08872732B872003C83C7 /* bash.swift in Sources */,
