@@ -8,7 +8,7 @@ Door Luuk Meier
 
 
 Command buttons
-- core 			Herbruikbare code geschikt voor meerdere Swift projecten
+- core \t Herbruikbare code geschikt voor meerdere Swift projecten
   - external 		Code van externe bronnen
   - utils			Code 
     - views		Views Herbruikbare views
