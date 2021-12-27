@@ -11,7 +11,7 @@ import SwiftUI
 extension NSOpenPanel {
     /// Extention of `NSOpenPanel` with static presets for getting different types of urls from the filesystem.
     
-    static var selectSketchPanel: NSOpenPanel {
+    static var selectProcessingSketch: NSOpenPanel {
         let panel = NSOpenPanel();
         panel.title = "Pick a processing sketch folder";
         panel.showsResizeIndicator = true;
@@ -20,6 +20,17 @@ extension NSOpenPanel {
         panel.canChooseFiles = true;
         panel.canChooseDirectories = false;
         panel.allowedFileTypes = ["pde"]
+        return panel
+    }
+    static var selectHTMLSketch: NSOpenPanel {
+        let panel = NSOpenPanel();
+        panel.title = "Pick a p5js html sketch file";
+        panel.showsResizeIndicator = true;
+        panel.showsHiddenFiles = false;
+        panel.allowsMultipleSelection = false;
+        panel.canChooseFiles = true;
+        panel.canChooseDirectories = false;
+        panel.allowedFileTypes = ["html"]
         return panel
     }
     static var selectProgram: NSOpenPanel {
@@ -46,13 +57,13 @@ class SketchFolder: Folder {
     }
     
     public func select() {
-        Folder.selectFolder(from: .selectSketchPanel) { result in
+        Folder.selectFolder(from: .selectProcessingSketch) { result in
             url = result;
         }
     }
     
     public func select(onValidPath: (_ url: URL) -> Void) {
-        Folder.selectFolder(from: .selectSketchPanel) { result in
+        Folder.selectFolder(from: .selectProcessingSketch) { result in
             url = result;
             onValidPath(result);
         }

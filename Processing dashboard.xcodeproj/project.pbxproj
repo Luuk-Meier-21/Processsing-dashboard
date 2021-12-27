@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		271141902746D59800E2875B /* filesystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711418F2746D59800E2875B /* filesystem.swift */; };
 		2715F1362760A2B0008D950C /* java.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2715F1352760A2B0008D950C /* java.swift */; };
+		2717AE6D277A54A70051C5E6 /* webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2717AE6C277A54A70051C5E6 /* webview.swift */; };
 		27464F3E274BF88500FB489B /* processingFields.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27464F3D274BF88500FB489B /* processingFields.view.swift */; };
 		27464F40274CED1000FB489B /* dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27464F3F274CED1000FB489B /* dispatch.swift */; };
 		27464F42274CF71700FB489B /* processingSize.view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27464F41274CF71700FB489B /* processingSize.view.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		2711418F2746D59800E2875B /* filesystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filesystem.swift; sourceTree = "<group>"; };
 		2715F1352760A2B0008D950C /* java.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = java.swift; sourceTree = "<group>"; };
+		2717AE6C277A54A70051C5E6 /* webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webview.swift; sourceTree = "<group>"; };
 		27464F3D274BF88500FB489B /* processingFields.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processingFields.view.swift; sourceTree = "<group>"; };
 		27464F3F274CED1000FB489B /* dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dispatch.swift; sourceTree = "<group>"; };
 		27464F41274CF71700FB489B /* processingSize.view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = processingSize.view.swift; sourceTree = "<group>"; };
@@ -43,7 +45,6 @@
 		274C08652732B66C003C83C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "/Users/luukmeier/Documents/Repos/Processsing-dashboard/command buttons/core/utils/views/ContentView.swift"; sourceTree = "<absolute>"; };
 		274C08672732B66E003C83C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		274C086A2732B66E003C83C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		274C086C2732B66E003C83C7 /* command_buttons.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = command_buttons.entitlements; sourceTree = "<group>"; };
 		274C08842732B855003C83C7 /* serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serialization.swift; sourceTree = "<group>"; };
 		274C08862732B872003C83C7 /* bash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bash.swift; sourceTree = "<group>"; };
 		274C08882732B8B6003C83C7 /* storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storage.swift; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 				275FEE96273AFC0800ABAC60 /* processing */,
 				274C08632732B66C003C83C7 /* command_buttonsApp.swift */,
 				274C08672732B66E003C83C7 /* Assets.xcassets */,
-				274C086C2732B66E003C83C7 /* command_buttons.entitlements */,
 				274C08692732B66E003C83C7 /* Preview Content */,
 			);
 			path = "command buttons";
@@ -133,6 +133,7 @@
 				274C08652732B66C003C83C7 /* ContentView.swift */,
 				275FEE97273B01D400ABAC60 /* input.swift */,
 				27EAE8CC275BCA7F00CB5C57 /* utilities.view.swift */,
+				2717AE6C277A54A70051C5E6 /* webview.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -281,6 +282,7 @@
 				27D78A25274D79B1002F6E8E /* processing.swift in Sources */,
 				27D78A2B27503878002F6E8E /* quantumValue.swift in Sources */,
 				2715F1362760A2B0008D950C /* java.swift in Sources */,
+				2717AE6D277A54A70051C5E6 /* webview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

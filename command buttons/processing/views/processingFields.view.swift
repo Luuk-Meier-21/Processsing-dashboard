@@ -50,29 +50,12 @@ struct ProcessingFieldView: View {
                         TextField("placeholder", text: binding)
                     }
                 }
-//            case .int(_):
-//                nilSafeBinding(binding.value.int) { int in
-//                    LabeledField(label: Text(field.label)) {
-//                        NumberField(float: int)
-//                    }
-//                    
-//                }
             case .size(_):
                 nilSafeBinding(binding.value.size) { size in
                     LabeledField(label: Text(field.label)) {
                         ProcessingSizeView(sketchSize: size)
                     }
-                    
-//                    Button(action: {
-//                        size.w.wrappedValue = 50;
-//                        print(size.w.wrappedValue)
-//                    }) {
-//                        Text("\(size.w.wrappedValue)")
-//                    }
                 }
-            case .stringSelection(_):
-                Text("dfa")
-//                ProcessingSizeView();
         default:
             EmptyView();
         }
@@ -82,7 +65,7 @@ struct ProcessingFieldView: View {
         if let optionalBinding = Binding(binding) {
             onValid(optionalBinding)
         } else {
-            ErrorView(message: "Binding: \(binding) is nil")
+            ErrorView(message: "Binding: \(binding) is nil");
         }
     }
     

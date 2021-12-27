@@ -94,6 +94,8 @@ class ProcessingData: Codable {
     init() {
 //        var test = JavaFactory();
 //        test.build()
+        var test: String? = "innerValue";
+        print(test);
     }
 }
 

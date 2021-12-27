@@ -1,7 +1,7 @@
 //
 //  bash.swift
 //
-//  Created by andreacipriani
+//  Created by Luuk Meier & andreacipriani
 //
 
 import Foundation
@@ -17,7 +17,7 @@ struct Bash: CommandExecuting {
     enum BashError: Error {
         case commandNotFound(name: String)
     }
-    
+    // from stack overflow by andreacipriani: (
     static func run(commandName: String, arguments: [String] = []) throws -> String {
         return try run(resolve(commandName), with: arguments)
     }
@@ -29,11 +29,12 @@ struct Bash: CommandExecuting {
         bashCommand = bashCommand.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
         return bashCommand
     }
+    // )
 
     static private func run(_ command: String, with arguments: [String] = []) throws -> String {
         let process = Process()
         process.launchPath = command
-        process.arguments = arguments
+        process.arguments = arguments   
         let outputPipe = Pipe()
         process.standardOutput = outputPipe
         process.launch()
